@@ -1,4 +1,28 @@
 import React, { useState } from 'react';
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+
+dayjs.extend(customParseFormat);
+
+function validarHora(hora) {
+    return dayjs(hora, 'HH:mm').isValid()
+}
+
+function validarHoras(apontamento) {
+    let errorMessage = '';
+    
+    if(!validarHora(apontamento.entrada1)) errorMessage += "Entrada 1 inválida\n"
+    if(!validarHora(apontamento.saida1)) errorMessage += "Saida 1 inválida\n"
+    if(!validarHora(apontamento.entrada2)) errorMessage += "Entrada 2 inválida\n"
+    if(!validarHora(apontamento.saida2)) errorMessage += "Saida 2 inválida\n"
+
+    if(errorMessage) {
+        alert(errorMessage);
+        return false;
+    }
+
+    return true;
+}
 
 export default function CadastrarApontamento({ onSubmit }) {
 
@@ -7,9 +31,13 @@ export default function CadastrarApontamento({ onSubmit }) {
     }
     const [apontamento, setApontamento] = useState(estadoInicial());
     const onChange = (e) => {
-        setApontamento({ ...apontamento, [e.target.name]: e.target.value })
+        setApontamento({ ...apontamento, [e.target.name]: e.target.value });
     };
     const cadastrar = () => {
+
+        if (!validarHoras(apontamento))
+            return;
+
         onSubmit(apontamento);
         setApontamento(estadoInicial());
     }
