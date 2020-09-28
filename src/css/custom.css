@@ -1,4 +1,8 @@
 .container-mini {
-    height: 100vh;
+    height: calc(100vh - 0.5em);
     width: 600px;
+}
+
+label {
+    font-weight: bold;
 }
