@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import InputMask from "react-input-mask";
 
 dayjs.extend(customParseFormat);
 
 function validarHora(hora) {
-    return dayjs(hora, 'HH:mm').isValid()
+    return dayjs(hora, 'HH:mm', true).isValid()
 }
 
 function validarHoras(apontamento) {
@@ -46,7 +47,8 @@ export default function CadastrarApontamento({ onSubmit }) {
         <div className="row mt-2">
             <div className="col-2">
                 <label>Ent. 1:</label>
-                <input type="text"
+                <InputMask
+                    mask="99:99"
                     className="form-control"
                     name="entrada1"
                     value={apontamento.entrada1}
@@ -54,21 +56,27 @@ export default function CadastrarApontamento({ onSubmit }) {
             </div>
             <div className="col-2">
                 <label>Saida 1:</label>
-                <input type="text" className="form-control"
+                <InputMask
+                    mask="99:99"
+                    className="form-control"
                     name="saida1"
                     value={apontamento.saida1}
                     onChange={(e) => onChange(e)} />
             </div>
             <div className="col-2">
                 <label>Ent. 2:</label>
-                <input type="text" className="form-control"
+                <InputMask
+                    mask="99:99"
+                    className="form-control"
                     name="entrada2"
                     value={apontamento.entrada2}
                     onChange={(e) => onChange(e)} />
             </div>
             <div className="col-2">
                 <label>Saida 2:</label>
-                <input type="text" className="form-control"
+                <InputMask
+                    mask="99:99"
+                    className="form-control"
                     name="saida2"
                     value={apontamento.saida2}
                     onChange={(e) => onChange(e)} />
