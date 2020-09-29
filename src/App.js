@@ -13,10 +13,15 @@ export default function App() {
         setApontamentos([...apontamentos, novoApontamento]);
     }
 
+    const onDelete = (id) => {
+        const apontamentosRestantes = apontamentos.filter((v) => v.id !== id);
+        setApontamentos(apontamentosRestantes);
+    }
+
     return (
         <div className="container container-mini mt-2">
             <Header />
-            <ListaApontamentos apontamentos={apontamentos} />
+            <ListaApontamentos apontamentos={apontamentos} onDelete={(id) => onDelete(id)} />
             <CadastrarApontamento onSubmit={(novoApontamento) => onSubmit(novoApontamento)} />
         </div>
     );
