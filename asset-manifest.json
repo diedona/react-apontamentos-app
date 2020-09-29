@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-apontamentos-app/static/css/main.837266dd.chunk.css",
+    "main.js": "/react-apontamentos-app/static/js/main.623b2c58.chunk.js",
+    "main.js.map": "/react-apontamentos-app/static/js/main.623b2c58.chunk.js.map",
+    "runtime-main.js": "/react-apontamentos-app/static/js/runtime-main.004bf660.js",
+    "runtime-main.js.map": "/react-apontamentos-app/static/js/runtime-main.004bf660.js.map",
+    "static/js/2.9061bbc4.chunk.js": "/react-apontamentos-app/static/js/2.9061bbc4.chunk.js",
+    "static/js/2.9061bbc4.chunk.js.map": "/react-apontamentos-app/static/js/2.9061bbc4.chunk.js.map",
+    "index.html": "/react-apontamentos-app/index.html",
+    "precache-manifest.161d4c83e9748b26fb00f77efbec85ea.js": "/react-apontamentos-app/precache-manifest.161d4c83e9748b26fb00f77efbec85ea.js",
+    "service-worker.js": "/react-apontamentos-app/service-worker.js",
+    "static/css/main.837266dd.chunk.css.map": "/react-apontamentos-app/static/css/main.837266dd.chunk.css.map",
+    "static/js/2.9061bbc4.chunk.js.LICENSE.txt": "/react-apontamentos-app/static/js/2.9061bbc4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.004bf660.js",
+    "static/js/2.9061bbc4.chunk.js",
+    "static/css/main.837266dd.chunk.css",
+    "static/js/main.623b2c58.chunk.js"
+  ]
+}

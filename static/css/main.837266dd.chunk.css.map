@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.css"],"names":[],"mappings":"AAAA,gBACI,yBAA2B,CAC3B,WACJ,CAEA,MACI,eACJ","file":"main.837266dd.chunk.css","sourcesContent":[".container-mini {\r\n    height: calc(100vh - 0.5em);\r\n    width: 600px;\r\n}\r\n\r\nlabel {\r\n    font-weight: bold;\r\n}"]}
