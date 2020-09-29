@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b971ee5197a79309d44b3ae9c2248304",
+    "revision": "78eb07722aff2e36b75ef57d7dda18e3",
     "url": "/react-apontamentos-app/index.html"
   },
   {
-    "revision": "d3f9b25b2a2ad0184b70",
+    "revision": "1ed7b186854ea2ee49d1",
     "url": "/react-apontamentos-app/static/css/main.837266dd.chunk.css"
   },
   {
-    "revision": "d2ebd497d3fc09746f86",
-    "url": "/react-apontamentos-app/static/js/2.9061bbc4.chunk.js"
+    "revision": "3c559a9ed73abf43dd1a",
+    "url": "/react-apontamentos-app/static/js/2.3fc95fbd.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/react-apontamentos-app/static/js/2.9061bbc4.chunk.js.LICENSE.txt"
+    "url": "/react-apontamentos-app/static/js/2.3fc95fbd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d3f9b25b2a2ad0184b70",
-    "url": "/react-apontamentos-app/static/js/main.623b2c58.chunk.js"
+    "revision": "1ed7b186854ea2ee49d1",
+    "url": "/react-apontamentos-app/static/js/main.0b3cac68.chunk.js"
   },
   {
     "revision": "06a3f0354b18109ed954",
