@@ -6,7 +6,7 @@ export default function ListaApontamentos({ apontamentos }) {
     return (
         <div>
             {apontamentos.map(apontamento =>
-                <Apontamento apontamento={apontamento} />
+                <Apontamento key={apontamento.id} apontamento={apontamento} />
             )}
         </div>
     );

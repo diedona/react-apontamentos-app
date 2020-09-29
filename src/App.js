@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import './css/custom.css';
 
 import Header from './components/Header';
@@ -8,7 +9,7 @@ import CadastrarApontamento from './components/CadastrarApontamento';
 export default function App() {
     const [apontamentos, setApontamentos] = useState([]);
     const onSubmit = (novoApontamento) => {
-        console.log(novoApontamento);
+        novoApontamento.id = uuidv4();
         setApontamentos([...apontamentos, novoApontamento]);
     }
 
