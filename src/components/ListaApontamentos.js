@@ -8,7 +8,7 @@ export default function ListaApontamentos({ apontamentos, onDelete }) {
             {apontamentos.map(apontamento =>
                 <Apontamento
                     key={apontamento.id}
-                    onDelete={(id) => onDelete(id)}
+                    onDelete={onDelete}
                     apontamento={apontamento} />
             )}
         </div>

@@ -26,19 +26,18 @@ function validarHoras(apontamento) {
     return true;
 }
 
+const estadoInicial = () => {
+    return { entrada1: '', saida1: '', entrada2: '', saida2: '' };
+}
+
 export default function CadastrarApontamento({ onSubmit }) {
-
-    const estadoInicial = () => {
-        return { entrada1: '', saida1: '', entrada2: '', saida2: '' };
-    }
-    
+   
     const [apontamento, setApontamento] = useState(estadoInicial());
-
     const onChange = (e) => {
         setApontamento({ ...apontamento, [e.target.name]: e.target.value });
     };
 
-    const cadastrar = () => {
+    const onClickCadastrar = () => {
 
         if (!validarHoras(apontamento))
             return;
@@ -54,32 +53,32 @@ export default function CadastrarApontamento({ onSubmit }) {
                     label="Ent. 1:"
                     nome="entrada1"
                     valor={apontamento.entrada1}
-                    onChange={(e) => onChange(e)} />
+                    onChange={onChange} />
             </div>
             <div className="col-2">
                 <InputCadastroApontamento
                     label="Saida 1:"
                     nome="saida1"
                     valor={apontamento.saida1}
-                    onChange={(e) => onChange(e)} />
+                    onChange={onChange} />
             </div>
             <div className="col-2">
                 <InputCadastroApontamento
                     label="Ent. 2:"
                     nome="entrada2"
                     valor={apontamento.entrada2}
-                    onChange={(e) => onChange(e)} />
+                    onChange={onChange} />
             </div>
             <div className="col-2">
                 <InputCadastroApontamento
                     label="Saida 2:"
                     nome="saida2"
                     valor={apontamento.saida2}
-                    onChange={(e) => onChange(e)} />
+                    onChange={onChange} />
             </div>
             <div className="col-4">
                 <label>&nbsp;</label>
-                <button onClick={() => cadastrar()} className="form-control btn btn-primary">Cadastrar</button>
+                <button onClick={onClickCadastrar} className="form-control btn btn-primary">Cadastrar</button>
             </div>
         </div>
     );

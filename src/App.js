@@ -21,8 +21,8 @@ export default function App() {
     return (
         <div className="container container-mini mt-2">
             <Header />
-            <ListaApontamentos apontamentos={apontamentos} onDelete={(id) => onDelete(id)} />
-            <CadastrarApontamento onSubmit={(novoApontamento) => onSubmit(novoApontamento)} />
+            <ListaApontamentos apontamentos={apontamentos} onDelete={onDelete} />
+            <CadastrarApontamento onSubmit={onSubmit} />
         </div>
     );
 }
